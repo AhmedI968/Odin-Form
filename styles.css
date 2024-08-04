@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse Bold';
-    src: url('Norse-Bold.otf');
+    src: url('fonts/Norse-Bold.otf');
 }
 
 :root {
@@ -35,7 +35,7 @@
 .side {
     width: 40%;
     height: 100%;
-    background-image: url('background.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
