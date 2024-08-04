@@ -28,7 +28,6 @@
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    gap: 1em;
     padding: 4em 2em;
     font-size: 1.2rem;
 }
@@ -50,6 +49,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .logo-div img {
@@ -59,7 +59,8 @@
 }
 
 .logo-div label {
-    font-size: 9em;
+    margin: 0;
+    font-size: 6em;
     font-family: 'Norse Bold';
 }
 
@@ -78,14 +79,94 @@
     text-decoration: underline;
 }
 
-input[type="password"]:invalid {
-    border: 2px solid red;
-}
 
-input[type="password"]:valid {
-    border: 2px solid green;
+
+input:focus {
+    outline: none;
+    border-color: rgba(0, 0, 255, 0.3);
+    box-shadow: 5px 5px 20px -5px rgb(0, 0, 0, 0.2);
 }
 
 p {
     font-weight: 550;
+}
+
+form {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+section {
+    background-color: white;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.top, .middle, .bottom {
+    display: flex;
+    gap: 1.5em; 
+    flex-wrap: wrap;
+}
+
+.fieldOption {
+    flex: 1; 
+    min-width: 220px; 
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 0.5em; /* Space between label and input */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    padding: 0.4em;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 0.8rem;
+}
+
+button[type="submit"] {
+    padding: 1.2rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: var(--accent-clr);
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #4d5e3e;
+}
+
+legend {
+    padding: 15px 0px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+legend a {
+    color: var(--accent-clr);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
