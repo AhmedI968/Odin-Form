@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('Norse-Bold.otf');
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.side {
+    width: 40%;
+    height: 100%;
+    font: 'Norse Bold';
+}
+
+.logo-div {
+    background-image: url('background.jpg');
+    color: white;
+}
